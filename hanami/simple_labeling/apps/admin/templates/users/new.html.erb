@@ -1,0 +1,19 @@
+<h2>Add user</h2>
+
+<%=
+  form_for :user, '/users' do
+    div class: 'input' do
+      label      :name
+      text_field :name
+    end
+
+    div class: 'input' do
+      label      :password
+      text_field :password
+    end
+
+    div class: 'controls' do
+      submit 'Create User'
+    end
+  end
+%>

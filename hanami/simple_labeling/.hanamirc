@@ -1,0 +1,4 @@
+project=simple_labeling
+architecture=container
+test=minitest
+template=erb
