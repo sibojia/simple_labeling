@@ -2,10 +2,8 @@ module Admin::Controllers::Home
   class Index
     include Admin::Action
 
-    expose :users
-
     def call(params)
-      @users = UserRepository.all
+      redirect_to routes.users_path
     end
   end
 end
