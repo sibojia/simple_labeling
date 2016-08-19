@@ -1,0 +1,21 @@
+<%= stylesheet 'table' %>
+<%= javascript 'a.js' %>
+<% if users.any? %>
+<table class='user-table'>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Password</th>
+  </tr>
+  <% users.each do |user| %>
+  <tr>
+  <td><%= user.id %></td>
+      <td><%= user.name %></td>
+      <td><%= user.password %></td>
+    </tr>
+  <% end %>
+</table>
+
+<% else %>
+  <p class="placeholder">There are no users yet.</p>
+<% end %>
